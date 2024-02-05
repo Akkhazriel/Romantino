@@ -1,0 +1,103 @@
+.row-info
+    display: flex
+    align-items: center
+
+.row-info__list
+    display: flex
+    align-items: center 
+    gap: 10px
+
+.row-info__link
+    color: #fff
+
+// DROPDOWN
+
+.row-info__city-dropdown
+    margin-left: 35px
+    position: relative
+
+.city-dropdown__list
+    opacity: 0
+    visibility: hidden
+    pointer-events: none
+
+    display: flex
+    flex-direction: column
+    gap: 15px
+
+    padding: 15px
+    width: 180px
+    position: absolute
+    left: 0
+    top: 100%
+    background-color: #dadada
+    border-radius: 0 0 8px 8px
+
+    transform: translate(0%, -10%)
+    transition: .3s linear
+
+.city-dropdown__field
+    color: #FFF
+    position: relative
+
+    &::after
+        content: ''
+        position: absolute
+
+        left: 0
+        right: 0
+        bottom: 0
+    
+        width: 100%
+        height: 1px
+        background-color: #fff
+
+.city-dropdown__item
+    cursor: pointer
+
+.row-info__city-dropdown:hover .city-dropdown__list
+    opacity: 1
+    visibility: visible
+    pointer-events: all
+
+    transform: translate(0%, 0%)
+
+// EMAIL
+.row-info__email
+    margin-left: 35px
+    color: #FFF
+
+// MAP MARKER
+.row-info__map-marker
+    margin-left: 35px
+    display: flex
+    align-items: center
+    gap: 4px
+    color: #FFF
+
+// SOCIALS
+
+.row-info__socials
+    margin-left: 48px
+    display: flex
+    align-items: center
+    color: #FFF
+    gap: 20px
+
+.socials__links 
+    display: flex
+    align-items: center
+    gap: 15px
+
+// profile
+.row-info__user-profile
+    margin-left: 48px
+    position: relative
+    display: flex
+    align-items: center
+    gap: 7px
+    color: #FFF
+
+    &::before
+        content: url('./../../img/header/row-info/user.svg')
+        height: 18px

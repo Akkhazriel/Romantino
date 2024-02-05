@@ -1,0 +1,82 @@
+header.header
+    .header-row
+        .header__row-info
+            .container
+                .row-info
+                    ul.row-info__list
+                        li.row-info__item
+                            a(href="#!").row-info__link Каталог
+                        li.row-info__item
+                            a(href="#!").row-info__link Скидки 
+                        li.row-info__item
+                            a(href="#!").row-info__link Доставка и оплата 
+                        li.row-info__item
+                            a(href="#!").row-info__link Контакты 
+                    .row-info__city-dropdown
+                        button.city-dropdown__field Ваш город
+                        ul.city-dropdown__list
+                            li.city-dropdown__item Москва
+                            li.city-dropdown__item Санкт-Петербург
+                            li.city-dropdown__item Ставрополь
+                            li.city-dropdown__item Краснодар
+                    a(href="mailto:somemail@mail.ru").row-info__email info@romantino.ru
+                    .row-info__map-marker
+                        img(src="./img/header/row-info/map-marker.svg", alt="map").map-marker__img
+                        span.map-marker__field Шоу-рум м.Серпуховская
+                    .row-info__socials
+                        p Бесплатный звонок по РФ
+                        .socials__links 
+                            a(href="#!")
+                                img(src="./img/header/row-info/telegram.svg", alt="telegram")
+                            a(href="#!")
+                                img(src="./img/header/row-info/whatsapp.svg", alt="whatsapp")
+                    a(href="#!").row-info__user-profile Личный кабинет
+        .header__row-main
+            .container
+                .row-main
+                    .row-main__logo
+                        img(src="./img/header/row-main/logo.svg", alt="Logo").logo
+                    .row-main__contact-numbers
+                        a(href="#!").contact-number.contact-number--first +7 495 946 80 07
+                        a(href="#!").contact-number 8 800 775 80 51
+                    .row-main__callback-YaM
+                        p Отзывы о магазине на Яндекс.Маркет
+                        .callback-YaM__rating
+                            img(src="./img/header/row-main/stars.svg", alt="Rating")
+                    .row-main__cart
+                        button.cart 
+                            span Корзина
+                            .cart-point
+                                img(src="./img/header/row-main/cart.svg", alt="Cart")
+                                .cart-count 0   
+        .header__row-nav
+            .container
+                nav.row-nav
+                    ul.row-nav__list
+                        li.row-nav__item
+                            a(href="#!").row-nav__link Каталог 
+                        li.row-nav__item
+                            a(href="#!").row-nav__link Для женщин 
+                        li.row-nav__item
+                            a(href="#!").row-nav__link Для мужчин 
+                        li.row-nav__item
+                            a(href="#!").row-nav__link Все бренды 
+                        li.row-nav__item
+                            a(href="#!").row-nav__link Доставка и оплата 
+                        li.row-nav__item
+                            a(href="#!").row-nav__link Контакты 
+                        li.row-nav__item
+                            a(href="#!").row-nav__link Распродажа 
+                    form(action="" method="get").row-nav__form-search
+                        input(type="text" placeholder="Поиск аромата" autocomplete="off").form-search__input
+                        img(src="./img/header/row-main/search.svg", alt="Search")
+        .header__swiper
+            .swiper
+                .swiper-wrapper.slider-wrapper
+                    .swiper-slide
+                        img(src="./img/header/slider/banner.png", alt="banner")
+                    .swiper-slide
+                        img(src="./img/header/slider/banner.png", alt="banner")
+                    .swiper-slide
+                        img(src="./img/header/slider/banner.png", alt="banner")
+                .swiper-pagination.slider-pag
